@@ -17,11 +17,25 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
+          name="taskPlanner"
+          options={{
+              title: 'Задачи',
+              tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          }}
+      />
+      <Tabs.Screen
         name="home"
         options={{
-          title: 'Home',
+          title: 'Главная',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
+      />
+      <Tabs.Screen
+          name="IncomeExpense"
+          options={{
+              title: 'Бюджет',
+              tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          }}
       />
       <Tabs.Screen
         name="explore"
