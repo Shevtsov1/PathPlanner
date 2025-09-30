@@ -17,14 +17,21 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
-          name="taskPlanner"
+          name="CalendarIntegration"
+          options={{
+              title: 'Календарь',
+              tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          }}
+      />
+      <Tabs.Screen
+          name="TaskPlanner"
           options={{
               title: 'Задачи',
               tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
           }}
       />
       <Tabs.Screen
-        name="home"
+        name="Home"
         options={{
           title: 'Главная',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
@@ -38,9 +45,9 @@ export default function TabLayout() {
           }}
       />
       <Tabs.Screen
-        name="explore"
+        name="Profile"
         options={{
-          title: 'Explore',
+          title: 'Профиль',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
