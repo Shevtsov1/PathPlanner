@@ -3,8 +3,7 @@ import {Image} from "expo-image";
 import {ThemedView} from "@/components/themed-view";
 import {ThemedText} from "@/components/themed-text";
 import {HelloWave} from "@/components/hello-wave";
-import {Platform, StyleSheet} from "react-native";
-import {Link} from "expo-router";
+import {StyleSheet} from "react-native";
 
 export default function TaskPlannerScreen() {
     return (
@@ -17,7 +16,7 @@ export default function TaskPlannerScreen() {
                 />
             }>
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Здравствуй, Землянская Александра!</ThemedText>
+                <ThemedText type="title">TaskPlanner!</ThemedText>
                 <HelloWave />
             </ThemedView>
         </ParallaxScrollView>
