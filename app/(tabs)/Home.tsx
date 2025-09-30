@@ -7,6 +7,7 @@ import {StyleSheet} from "react-native";
 
 export default function HomeScreen() {
   return (
+      //Image heder
       <ParallaxScrollView
           headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
           headerImage={
