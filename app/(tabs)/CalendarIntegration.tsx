@@ -3,7 +3,7 @@ import {Image} from "expo-image";
 import {ThemedView} from "@/components/themed-view";
 import {ThemedText} from "@/components/themed-text";
 import {HelloWave} from "@/components/hello-wave";
-import {StyleSheet} from "react-native";
+import {StyleSheet, View, Text} from "react-native";
 
 export default function CalendarIntegrationScreen() {
     return (
@@ -19,6 +19,11 @@ export default function CalendarIntegrationScreen() {
                 <ThemedText type="title">CalendarIntegration!</ThemedText>
                 <HelloWave />
             </ThemedView>
+            {[...Array(30)].map((_, i) => (  // Corrected array usage
+                <View key={i} style={{ flexDirection: "row", alignItems: "center", padding: 15 }}> {/* Updated key syntax */}
+                    <Text>Dummy Item {i + 1}</Text>
+                </View>
+            ))}
         </ParallaxScrollView>
     );
 }
